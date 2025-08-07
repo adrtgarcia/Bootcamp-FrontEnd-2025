@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAGs HTML 5: Estrutural</title>
+    <style>
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+        }
+        nav ul li {
+            padding: 10px 15px;
+            color: blue;
+            text-decoration: none;
+            border-radius: 10px 0px;
+        }
+        nav ul li a:hover {
+            color: white;
+            background: pink;
+        }
+        blockquote {
+            background: lightblue;
+            padding: 15px;
+            margin-left: 0px;
+            border-left: royalblue solid 5px;
+        }
+        article time {
+            font-style: italic;
+        }
+        article q {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Cabeçalho da página
+
+        <nav>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        Parte principal da página
+
+        Article: 
+        <article>
+            <p>Qual o seu prato favorito?</p>
+            <article>
+                <p>É pizza!</p>
+            </article>
+        </article>
+
+        <article>
+            <h1>Descoberta de vida em outro planeta</h1>
+            <p>Publicado em <time pubdate>06/08/2025 20:00</time></p>
+            <p>Como usar a tag Q: <q>Exemplo de article</q></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque temporibus numquam deleniti architecto minima nulla atque quae quasi cumque iusto? Enim quisquam dicta odio consectetur earum iure, natus accusamus iusto. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, dolorem soluta! Recusandae, iste quidem tempore possimus quasi non? Nisi quibusdam illum ipsum amet numquam in nobis dicta modi? Aperiam, facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur soluta recusandae corporis minus obcaecati sapiente modi delectus sed provident natus dignissimos inventore amet dolorem maiores, aperiam laboriosam! Vero, expedita exercitationem?</p>
+            <blockquote cite="https://en.wikipedia.org/wiki/Lorem_ipsum">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quaerat nam ullam sit! Sequi temporibus quia quas iusto soluta animi ratione assumenda nihil expedita quasi, perferendis dolores non qui accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quae deserunt ipsa eaque inventore sit, consequuntur adipisci debitis autem fugiat quisquam quaerat. Magnam facere facilis aliquam commodi. Distinctio, quo non.
+                Sapiente quos ex saepe quod at ratione fugit quaerat, nam blanditiis ducimus non, vero id dolor corporis molestias! Pariatur esse unde aspernatur sit cumque aliquam corporis nostrum iusto molestiae dolorem!</p>
+            </blockquote>
+        </article>
+
+        Section: 
+        <section>Casa 1</section>
+        <section>Casa 2</section>
+        <section>Casa 3</section>
+
+        Aside: 
+        <aside>Imobiliária</aside>
+        <aside>Corretor 1</aside>
+        <aside>Corretor 2</aside>
+
+        Figure: 
+        <figure>
+            <img src="https://i0.wp.com/popasiaticojpg.com/wp-content/uploads/2024/06/red-velvet-cosmic.png?fit=810%2C400&ssl=1" width="500">
+            <figcaption>Descrição da imagem</figcaption>
+        </figure>
+
+        Picture:
+        <picture>
+            <source srcset="https://kpopreviewed.com/wp-content/uploads/2024/06/redvelvet-cosmic.png" media="(min-width: 50px)">
+            <img src="https://i0.wp.com/popasiaticojpg.com/wp-content/uploads/2024/06/red-velvet-cosmic.png?fit=810%2C400&ssl=1" width="500">
+        </picture>
+    </main>
+    <footer>
+        Rodapé da página
+    </footer>
+</body>
+</html>
