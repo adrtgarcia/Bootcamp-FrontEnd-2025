@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web com HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Criando Uma Página Web Utilizando as Tags Aprendidas</h1>
+        <hr>
+
+        <p>Esta página faz parte do desafio de projeto "Criar Uma Página Web Utilizando as Tags Aprendidas", proposto no bootcamp de Front-End, promovido pela DIO em parceria com o Santander.</p>
+
+        <h2 id="indice">Índice</h2>
+        <ul>
+            <li><a href="#primeiros-passos">Primeiros Passos com HTML</a></li>
+            <li><a href="#introducao">Aula 01: Introdução ao HTML na Prática</a></li>
+            <li><a href="#formulario">Aula 02: Trabalhando com Formulário em HTML</a></li>
+            <li><a href="#estruturacao">Aula 03: Estruturando seu HTML + Formatações</a></li>
+            <li><a href="#midias">Aula 04: Trabalhando com Mídias Utilizando HTM</a>L</li>
+            <li><a href="#tabelas">Aula 05: Criando Tabelas com HTML</a></li>
+            <li><a href="#semantico">Aula 06: Entendendo HTML Semântico</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <h2 id="primeiros-passos">Primeiros Passos com HTML</h2>
+        <small><a href="#indice">(Voltar para o índice)</a></small>
+        <p>
+            O bootcamp <strong>Santander 2025: Front-End</strong> aborda o básico para se tornar um dev front-end, contemplando HTML, CSS e JavaScript. 
+            Assim, durante o curso <strong>Primeiros Passo com HTML</strong>, estudamos o funcionamento do HTML, além de suas principais TAGs e convenções de código.
+        </p>
+        <br>
+
+        <h2 id="introducao">Aula 01: Introdução ao HTML na Prática</h2>
+        <small><a href="#indice">(Voltar para o índice)</a></small>
+        <p>
+            Para a estruturação básica do HTML, contamos com algumas TAGs para formatação de texto, como:
+        </p>
+        <ul>
+            <li><strong>strong</strong> ou <strong>b</strong> para colocar o texto em <strong>negrito</strong>;</li>
+            <li><strong>i</strong> para escrever em <i>itálico</i>;</li>
+            <li><strong>u</strong> para <u>sublinhar</u> um texto.</li>
+        </ul>
+        <p>
+            Além disso, os títulos e subtítulos são indicados pelas TAGs <strong>h1</strong>, <strong>h2</strong>, ..., <strong>h6</strong>,
+            enquanto os parágrafos são sinalizados por <strong>p</strong>. Para citações, é possível utilizar <strong>blockquote</strong> para uma citação longa,
+            ou ainda <strong>q</strong> para uma citação mais curta. Por fim, a TAG <strong>br</strong> é utilizada para quebra de linha.
+        </p>
+        <p>
+            Para a criação de listas, temos as TAGs <strong>ol</strong> para listas enumeradas, <strong>ul</strong> para listas com bullet points, 
+            e <strong>li</strong> para listar os itens.
+        </p>
+        <p>
+            Já para a navegação com links é possível por meio da TAG <strong>a</strong>. Podemos adicionar links externos, links para outra página do mesmo projeto, ou ainda ancorar elementos dentro de uma página.
+        </p>
+        <p>
+            Por fim, temos alguns inputs básicos, sendo eles <strong>text</strong> para entradas do teclado, <strong>number</strong> para tratar números, e ainda 
+            <strong>color</strong> para selecionar cores.
+        </p>
+        <div align="center">
+            <br><label> Digite seu texto: </label><input type="text"><br>
+            <br><label> Escolha um número: </label><input type="number"><br>
+            <br><label> Selecione uma cor: </label><input type="color"><br>
+        </div>
+        <br>
+
+        <h2 id="formulario">Aula 02: Trabalhando com Formulário em HTML</h2>
+        <small><a href="#indice">(Voltar para o índice)</a></small>
+        <p>
+            Para a criação de formulários com HTML, combinamos diferentes tipos de input e de botões dentro de uma TAG <strong>form</strong>. Cada tipo de input possui funções e propósitos específicos, 
+            clique <a href="inputs.html" target="_blank">aqui</a> para ver exemplos. Quanto aos botões, temos três tipos:
+        </p>    
+        <ul>
+            <li><button type="button">BUTTON</button> é um botão padrão, sem comportamento definido;</li>
+            <li><button type="submit">SUBMIT</button> é utilizado para enviar um formulário;</li>
+            <li><button type="reset">RESET</button> é indicado para apagar as informações fornecidas.</li>
+        </ul>
+        <br>
+
+        <h2 id="estruturacao">Aula 03: Estruturando seu HTML + Formatações</h2>
+        <small><a href="#indice">(Voltar para o índice)</a></small>
+        <p>
+            Para a formatação de textos em uma página em HTML, temos diversas TAGs:
+        </p>
+        <ul>
+            <li><strong>i</strong>: <i>Texto em itálico</i></li>
+            <li><strong>strong</strong>: <strong>Texto em negrito</strong></li>
+            <li><strong>u</strong>: <u>Texto sublinhado</u></li>
+            <li><strong>mark</strong>: <mark>Texto destacado</mark></li>
+            <li><strong>sup</strong>: <sup>Texto superescrito</sup></li>
+            <li><strong>sub</strong>: <sub>Texto subescrito</sub></li>
+        </ul>
+        <p>
+            Para citações, podemos optar por <strong>q</strong> para citações breves, como <q>Lorem ipsum dolor sit amet consectetur adipisicing elit</q>, ou ainda, 
+            <strong>blockquote</strong> para citações mais longas:
+            <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit repellat maxime ex nemo beatae dolor quaerat nisi deserunt incidunt doloribus earum, iste, amet repellendus, praesentium soluta aut adipisci modi in?</blockquote>
+        </p>
+        <p>
+            Já para a estruturação de uma página web, podemos utilizar embeds e iframes:
+        </p>
+        <div align="center">
+            <embed src="midia/icarus.mp4" width="60%" height="352">
+        </div>
+        <p>
+            Um <strong>Embed</strong> permite a inserção de um conteúdo externo que não é HTML, normalmente mídia ou aplicações.
+        </p>
+        <div align="center">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/213zHiFZwtDVEqyxeCbk07?utm_source=generator" width="70%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <p>
+            Por sua vez, um <strong>Iframe</strong> insere outra página HTML dentro da página atual.
+        </p>
+        <br>
+
+        <h2 id="midias">Aula 04: Trabalhando com Mídias Utilizando HTML</h2>
+        <small><a href="#indice">(Voltar para o índice)</a></small>
+        <p>
+            Para adicionar diferentes tipos de mídias em uma página HTML, é possível contar com TAGs específicas para cada tipo, como podemos ver a seguir.
+        </p>
+        <div align="center">
+            <img src="midia/seulgi.jpg" width="250">
+            <img src="midia/irene.jpg" width="270">
+            <img src="midia/joy.jpg" width="250">
+        </div>
+        <p>
+            A TAG <strong>img</strong> exibe imagens, sejam elas PNG, JPEG, JPG, GIF...
+        </p>
+        <div align="center">
+            <audio controls>
+                <source src="midia/underwater.mp3">
+                Seu navegador não tem suporte para este áudio.
+            </audio>
+        </div>
+        <p>
+            Já a TAG <strong>audio</strong> insere um player de áudio no navegador.
+        </p>
+        <div align="center">
+            <video controls>
+                <source src="midia/chillkill.mp4">
+                Seu navegador não tem suporte para este vídeo.
+            </video>
+        </div>
+        <p>
+            Apesar da TAG <strong>video</strong> funciona como a TAG <strong>audio</strong>, ela permite múltiplos <strong>source</strong>. 
+            Por sua vez, é possível adicionar legensas e faixas de texto para áudios e vídeos por meio da TAG <strong>track</strong>, utilizando um arquivo VTT.
+        </p>
+        <div align="center">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/4Z7UDSYMHWwsQ7pmtt0SlJ?utm_source=generator" width="70%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <p>
+            Por fim, o <strong>iframe</strong> incorpora o conteúdo de outra página. 
+        </p>
+        <br>
+
+        <h2 id="tabelas">Aula 05: Criando Tabelas com HTML</h2>
+        <small><a href="#indice">(Voltar para o índice)</a></small>
+        <p>
+            As tabelas permitem formatar as informações de forma tabular, sendo suas principais TAGs:
+        </p>
+        <ul>
+            <li><strong>table</strong> para definir uma tabela;</li>
+            <li><strong>caption</strong> para adicionar título/legenda à tabela;</li>
+            <li><strong>tr</strong> para adicionar uma nova linha;</li>
+            <li><strong>td</strong> para adicionar uma nova coluna, ou célula de dado;</li>
+            <li><strong>th</strong> para adicionar uma célula de título</li>
+            <li><strong>thead</strong> indica o cabeçalho da tabela;</li>
+            <li><strong>tbody</strong> indica o corpo da tabela;</li>
+            <li><strong>tfoot</strong> indica o rodapé da tabela.</li>
+        </ul>
+        <br>
+
+        <h2 id="semantico">Aula 06: Entedendo HTML Semântico</h2>
+        <small><a href="#indice">(Voltar para o índice)</a></small>
+        <p>
+            O HTML Semântico diz respeito ao uso de TAGs que têm significado para estruturar o conteúdo de forma lógica e clara, tanto 
+            para humanos quanto para máquinas (navegadores, leitores de tela, mecanismos de busca). Assim, ao invés de usar apenas <strong>div</strong> e <strong>span</strong> para tudo, usamos <strong>header</strong>, 
+            <strong>nav</strong>, <strong>main</strong>, <strong>article</strong>, <strong>section</strong>, dentre outras TAGs, indicando sua função e/ou contexto.
+        </p>
+        <p>
+            Com isso, ganhamos como benefícios a acessibilidade, a manutenção do código, e o melhor entendimento do conteúdo das páginas pelos SEOs, além de separar 
+            a estilização via CSS da formatação do HTML.
+        </p>
+        <br>
+    </main>
+
+    <footer>
+        <h2>Referências</h2>
+        <ul>
+            <li><a href="https://www.w3schools.com/html">HTML Tutorial - W3Schools</a></li>
+            <li><a href="https://web.dio.me/track/santander-2025-front-end">Bootcamp Santander 2025: Front-End - DIO</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
