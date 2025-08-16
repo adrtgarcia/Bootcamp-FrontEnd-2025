@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupadores de Seletores</title>
+    <style>
+        /* agrupadores de seletores: */
+        h1, .texto, #link-referencia {
+            color: red;
+            background: lightblue;
+        }
+
+        h1, [id^="botao"] {
+            background: lightcoral;
+        }
+
+        p.texto {
+            color: purple;
+        }
+
+        /* combinador descendente: */
+        li {
+            color: red;
+        }
+
+        li li {
+            color: green;
+        }
+
+        #lista-01 li {
+            background: lightblue;
+        }
+
+        .fundo-verde li {
+            background: lightgreen;
+        }
+
+        .fundo-azul li {
+            background: lightblue;
+        }
+
+        .fundo-verde #sublista-01 li {
+            color: black;
+        }
+
+        /* combinador filho: */
+        div p {
+            background: lightgreen;
+        }
+
+        div > p {
+            color: red;
+        }
+
+        .fundo-rosa > p {
+            background: pink;
+        }
+
+        .fundo-amarelo > p {
+            background: yellow;
+        }
+
+        /* combinador irmão adjacente: */
+        div + p {
+            color: orange;
+        }
+
+        .fundo-laranja + p {
+            background: plum;
+        }
+
+        /* combinador irmão em geral: */
+        .fundo-roxo ~ p {
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agrupamento de Seletores</h1>
+    <p class="texto">Podems aplicar as mesmas regras CSS para vários seletores diferentes. Para isso, podemos separar os seletores utilizando uma vírgula.</p>
+    <div class="texto">Assim, não precisamos ficar copiando a colando os mesmos códigos para todos, nós podemos fazer um só bloco de CSS e reutilizar as mesmas regras!</div>
+
+    <br><br>
+    <a id="link-referencia" href="#">Clique para ver a documentação</a>
+    <br><br>
+    <a id="link-suporte" href="#">Clique para entrar em contato</a>
+    <br><br>
+    <a id="botao-voltar" href="#">Voltar</a>
+    <br><br>
+    <button id="botao-fechar">Fechar página</button>
+
+    <h1>Combinador Descendente</h1>
+    <ul>
+        <li class="fundo-verde" id="lista-01">
+            <div>Item 1</div>
+            <ul id="sublista-01">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-verde" id="lista-02">
+            <div>Item 2</div>
+            <ul id="sublista-02">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-azul" id="lista-03">
+            <div>Item 3</div>
+            <ul id="sublista-03">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h1>Combinador Filho</h1>
+    <div class="fundo-rosa">
+        <p>Parágrafo 1 dentro da div 1</p>
+        <p>Parágrafo 2 dentro da div 1</p>
+        <span>
+            <p>Parágrafo 3 dentro da div 1, dentro do span</p>
+        </span>    
+    </div>
+    <p>Parágrafo 4 fora da div</p>
+    <p>Parágrafo 5 fora da div</p>
+    <div class="fundo-amarelo">
+        <p>Parágrafo 6 dentro da div 2</p>
+        <p>Parágrafo 7 dentro da div 2</p>
+    </div>
+
+    <h1>Combinador Irmão</h1>
+    <div class="fundo-laranja">
+        <p>Parágrafo 1 dentro da div 1</p>
+        <p>Parágrafo 2 dentro da div 1</p>
+        <span>
+            <p>Parágrafo 3 dentro da div 1, dentro do span</p>
+        </span>    
+    </div>
+    <p>Parágrafo 4 fora da div</p>
+    <p>Parágrafo 5 fora da div</p>
+    <div class="fundo-roxo">
+        <p>Parágrafo 6 dentro da div 2</p>
+        <p>Parágrafo 7 dentro da div 2</p>
+    </div>
+    <p>Parágrafo 4 fora da div</p>
+    <p>Parágrafo 5 fora da div</p>
+</body>
+</html>
