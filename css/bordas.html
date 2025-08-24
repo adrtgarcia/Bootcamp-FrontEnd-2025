@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+</head>
+<body>
+    <h3>Tamanho, Estilo e Cor</h3>
+    <br><div style="width: 200px; height: 200px; background-color: lightblue; border-color: deeppink; border-style: solid; border-width: 10px;"></div>
+    <br><div style="width: 200px; height: 200px; background-color: lightcoral; border-color: red; border-style: dashed; border-width: 5px;"></div>
+    <br><div style="width: 200px; height: 200px; background-color: aquamarine; border-color: lightgreen; border-style: outset; border-width: 8px;"></div>
+    
+    <h3>Border</h3>
+    <br><div style="width: 200px; height: 200px; background-color: plum; border-top: 10px solid purple; border-bottom-style: double; border-bottom-width: 20px;"></div>
+    
+    <h3>Border Radius</h3>
+    <br><div style="width: 200px; height: 200px; background-color: plum; border: 5px solid purple; border-radius: 20px;"></div>
+    <br><div style="width: 200px; height: 200px; background-color: plum; border: 5px solid purple; border-radius: 50%;"></div>
+
+    <h3>Border Image Source / Slice / Width / Repeat / Outset</h3>
+    <br><div style="width: 200px; height: 200px; background-color: black; border: 30px solid; margin: 50px auto;
+        border-image-source: url('https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Twenty_One_Pilots_-_Scaled_and_Icy.png/250px-Twenty_One_Pilots_-_Scaled_and_Icy.png'); 
+        border-image-slice: 70;
+        border-image-width: 10%;
+        border-image-repeat: round;
+        border-image-outset: 30px;">
+    </div>
+    <br><div style="width: 200px; height: 200px; background-color: black; border: 30px solid; margin: 50px auto;
+        border-image-source: linear-gradient(orange, deeppink); 
+        border-image-slice: 50;
+        border-image-width: 30px;
+        border-image-repeat: stretch;
+        border-image-outset: 1.5;">
+    </div>
+    <br><div style="width: 200px; height: 200px; background-color: black; border: 30px solid; margin: 50px auto;
+        border-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Twenty_One_Pilots_-_Scaled_and_Icy.png/250px-Twenty_One_Pilots_-_Scaled_and_Icy.png') 70 / 20px / 1.5 round ;">
+    </div>
+</body>
+</html>

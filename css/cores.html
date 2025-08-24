@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+    <style>
+        #pre-definidas {
+            color: darkviolet;
+            background: powderblue;
+        }
+
+        #current-color {
+            color: deeppink;
+            border: 2px solid currentColor;
+        }
+
+        #hex {
+            color: #ff3c85;
+            background: #f59eaf;
+        }
+
+        #hextrans {
+            color: #fcca28;
+            background: #37ba9bF0;
+        }
+
+        #rgb {
+            color: rgb(255, 100, 200);
+            background: rgb(0%, 50%, 50%);
+        }
+
+        #rgba {
+            color: rgba(255, 100, 200, 0.5);
+            background: rgba(0%, 50%, 50%, 0.3);
+        }
+
+        #hsl {
+            color: hsl(120, 100%, 50%);
+            background: hsl(180, 100%, 80%);
+        }
+
+        #hsla {
+            color: hsla(120, 100%, 50%, .5);
+            background: hsla(180, 100%, 80%, .7);
+        }
+    </style>
+</head>
+<body>
+    <h1>Cores</h1>
+    <p>Existem várias formas de definirmos cores utilizando CSS. Elas são:</p>
+    <ul>
+        <li id="pre-definidas">Cores pré-definidas</li>
+        <li id="current-color">Palavra-chave currentcolor</li>
+        <li id="hex">Hexadecimal</li>
+        <li id="hextrans">Hexadecimal com transparência</li>
+        <li id="rgb">RGB</li>
+        <li id="rgba">RGBA</li>
+        <li id="hsl">HSL</li>
+        <li id="hsla">HSLA</li>
+    </ul>
+</body>
+</html>
