@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First</title>
+    <style>
+        @media screen and (min-width: 720px) {
+            main {
+                flex-direction: row;
+                gap: 24px;
+                max-width: 1200px;
+                margin: 16px auto;
+                flex-wrap: wrap;
+            }
+
+            #presentation {
+                flex-basis: 500px;
+            }
+
+            #skills, #education {
+                flex: 1;
+            }
+
+            nav ul {
+                flex-direction: row;
+            }
+
+            nav ul li {
+                flex: 1;
+                text-align: center;
+            }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        nav li {
+            background-color: lightgreen;
+            padding: 8px;
+            border-radius: 4px;
+            list-style: none;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        #skills {
+            background-color: lightgreen;
+            border: 1px solid green;
+            border-radius: 4px;
+        }
+
+        #skills li {
+            list-style: decimal;
+        }
+
+        #education {
+            background-color: lightblue;
+            border: 1px solid blue;
+            padding: 4px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Sobre Mim</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Conheça meu Trabalho</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="presentation">
+            <h1>Amanda Duarte</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsum hic, officia perspiciatis assumenda aut nam molestias sint sapiente laborum temporibus nobis sed, recusandae aliquam magnam cumque neque. Enim, placeat.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta odit voluptatibus aspernatur magni dignissimos, porro omnis odio eius, cupiditate molestias quas qui. Cupiditate amet eius natus ut rem asperiores! Iste!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis ipsam sunt dicta aliquid cum obcaecati quod optio ullam ipsum deserunt qui ratione, possimus repudiandae itaque quasi nostrum debitis accusantium voluptas.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis voluptatem magnam tempora beatae, eaque optio cumque earum atque tenetur aliquam voluptas, reiciendis quisquam, deserunt laborum quasi cum officia at neque.</p>
+        </section>
+        <section id="skills">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>C++</li>
+            </ul>
+        </section>
+        <section id="education">
+            <ul>
+                <li>Técnico em Informática</li>
+                <li>Bacharel em Ciência da Computação</li>
+                <li>Pós-Graduação XPTO</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
