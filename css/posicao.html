@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        .inline {
+            display: inline-block;
+        }
+
+        .exemplo {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        #el1 {
+            background-color: orange;
+        }
+
+        #el2 {
+            background-color: palevioletred;
+        }
+
+        #el3 {
+            background-color: palegreen;
+        }
+
+        #el4 {
+            background-color: paleturquoise;
+        }
+
+        #el5 {
+            background-color: violet;
+        }
+
+        #el6 {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posicionando os Elementos na Tela</h1>
+    <p>A propriedade position vai nos ajudar a manipular a localização/posição do elemento na sua página.</p>
+    
+    <h2>STATIC</h2>
+    <div class="exemplo inline" id="el1">Elemento 1</div>
+    <div class="exemplo inline" id="el2">Elemento 2</div>
+    <div class="exemplo inline" id="el3">Elemento 3</div>
+    <br><br>
+    <div class="exemplo" id="el4">Elemento A</div>
+    <div class="exemplo" id="el5">Elemento B</div>
+    <div class="exemplo" id="el6">Elemento C</div>
+    <br><br>
+
+    <h2>RELATIVE</h2>
+    <div class="exemplo inline" id="el1" style="position: relative; left: 30px;">Elemento 1</div>
+    <div class="exemplo inline" id="el2" style="position: relative; top: 20px;">Elemento 2</div>
+    <div class="exemplo inline" id="el3" style="position: relative; bottom: 40px;">Elemento 3</div>
+    <br><br>
+    
+    <h2>ABSOLUTE</h2>
+    <div class="exemplo inline" id="el1">Elemento 1</div>
+    <div class="exemplo inline" id="el2" style="position: absolute; opacity: .5; left: 50px">Elemento 2</div>
+    <div class="exemplo inline" id="el3">Elemento 3</div>
+    <br><br>
+    
+    <h2>FIXED</h2>
+    <div class="exemplo inline" id="el1" style="position: fixed; right: 0px;">Elemento 1</div>
+    <div class="exemplo inline" id="el2" >Elemento 2</div>
+    <div class="exemplo inline" id="el3" >Elemento 3</div>
+    <br><br>
+    <div class="exemplo" id="el4" style="position: fixed; right: 0px;">Elemento A</div>
+    <div class="exemplo" id="el5">Elemento B</div>
+    <div class="exemplo" id="el6">Elemento C</div>
+    <br><br>
+    
+    <h2>STICKY</h2>
+    <div class="exemplo" id="el4">Elemento A</div>
+    <div class="exemplo" id="el5">Elemento B</div>
+    <div class="exemplo" id="el6" style="position: sticky; top: 30px;">Elemento C</div>
+    <br><br>
+</body>
+</html>

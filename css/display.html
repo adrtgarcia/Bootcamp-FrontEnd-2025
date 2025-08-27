@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .exemplo {
+            background-color: pink;
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 200px;
+            height: 250px;
+            margin: 8px;
+            padding: 30px;
+        }
+
+        .menu {
+            background-color: plum;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            padding: 20px 40px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .esconder {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propriedade Display</h1>
+    <p>A propriedade display vai determinar como essas caixinhas retangulares irão se comportar na hora de serem exibidas na tela.</p>
+    <ul>
+        <li>border-width</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+
+    <h2>Exemplos de BLOCK</h2>
+    <div class="exemplo">Exemplo 01</div>
+    <p class="exemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe labore praesentium beatae vitae! Ullam similique necessitatibus corrupti. Labore aliquid sint vero officiis optio voluptas, a at natus animi neque! Sint.</p>
+    <span class="exemplo" style="display: block;">Exemplo 03</span>
+    <br><br>
+
+    <h2>Exemplos de INLINE</h2>
+    <span class="exemplo">Exemplo 01</span>
+    <span class="exemplo">Exemplo 02</span>
+    <em class="exemplo">Exemplo 03</em>
+    <b class="exemplo">Exemplo 04</b>
+    <p>Lorem ipsum <b class="exemplo">dolor sit amet</b> consectetur, adipisicing elit. Sapiente, commodi! Labore nobis pariatur explicabo magnam tempora ad non consequuntur, veritatis odio illo, tempore esse, eius obcaecati iusto soluta tenetur in!</p>
+    <br><br>
+
+    <h2>Exemplos com INLINE-BLOCK</h2>
+    <span class="exemplo inline-block">Exemplo 01</span>
+    <em class="exemplo inline-block">Exemplo 02</em>
+    <b class="exemplo inline-block">Exemplo 03</b>
+    <span class="exemplo inline-block">Exemplo 04</span>
+    <em class="exemplo inline-block">Exemplo 05</em>
+    <b class="exemplo inline-block">Exemplo 06</b>
+    <p>Lorem ipsum <b class="exemplo inline-block">dolor sit amet</b> consectetur adipisicing elit. Provident necessitatibus dolore delectus tenetur. Inventore similique corrupti quis velit, beatae veritatis aut autem amet nulla recusandae cumque est temporibus ut natus!</p>
+    <br><br>
+
+    <h2>Exemplos com NONE</h2>
+    <div class="esconder">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum rem cum corrupti incidunt. Deleniti perferendis eaque sint quis ratione doloribus quod, nobis iure delectus voluptatum itaque aliquam consectetur consequuntur reprehenderit!
+        Provident fugiat ipsa autem et inventore pariatur molestiae, consequuntur perferendis repudiandae! Sequi modi odio aspernatur, quidem animi, pariatur delectus voluptates, dolore culpa cum provident dignissimos exercitationem vel enim incidunt quam!</p>
+    </div>
+    <div class="exemplo">
+        <p class="esconder">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugit alias cumque cum doloribus numquam, nesciunt magnam id animi nostrum distinctio ducimus quae porro impedit ipsa, veritatis odio delectus harum?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque optio adipisci minima corrupti magnam, nobis nulla possimus. Voluptatem velit natus, voluptas iste nisi consectetur aliquid saepe iure, cumque odit pariatur.</p>
+    </div>
+    <br><br>
+
+    <h2>Exemplo de Menu</h2>
+    <h3>Menu</h3>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Link 01</a></li>
+            <li><a href="#">Link 02</a></li>
+            <li><a href="#">Link 03</a></li>
+        </ul>
+    </nav>
+
+    <h2>Display NONE x Visibility HIDDEN</h2>
+    <div style="border: 1px solid gray;">
+        <p class="exemplo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In suscipit itaque vero pariatur quam porro laborum aut, iste quibusdam sit maxime autem soluta illum, reprehenderit aperiam voluptatibus hic molestias nostrum.</p>
+        <p class="exemplo" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nesciunt minus modi ducimus minima repellat reprehenderit velit aliquid assumenda optio, ipsa dolor inventore quidem porro architecto ullam quam voluptatum sunt.</p>
+        <p class="exemplo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque consequatur, eligendi sequi officiis facilis veniam quam et ea obcaecati ut expedita ipsa quae praesentium, voluptate repellendus laboriosam consequuntur iste? Excepturi.</p>
+    </div>
+    <br>
+    <div style="border: 1px solid gray;">
+        <p class="exemplo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur modi ducimus, fugiat nostrum maxime recusandae pariatur tenetur tempore harum delectus. Neque quisquam eum accusamus molestias labore? Ab iusto voluptas consequuntur!</p>
+        <p class="exemplo" style="visibility: hidden;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusantium at sit veniam doloremque voluptatum eum voluptas totam laborum quam nobis aspernatur nesciunt repellat unde aliquid beatae, laudantium, rerum ipsam.</p>
+        <p class="exemplo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut ab explicabo necessitatibus! Itaque nostrum odit eaque architecto aperiam deleniti voluptatum? Aspernatur iusto provident expedita molestiae dicta ipsa iure nam corrupti.</p>
+    </div>
+</body>
+</html>
