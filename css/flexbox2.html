@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .containerflex {
+            background-color: palegreen;
+            padding: 20px;
+            margin: 10px;
+            display: flex;
+        }
+
+        .containerinline {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 10px;
+            display: inline-flex;
+        }
+
+        .item {
+            background-color: orange;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conceitos</h1>
+    <div class="containerflex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <div class="containerinline">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h1>Eixos</h1>
+    <div class="containerflex" style="flex-direction: row;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <div class="containerinline" style="flex-direction: column;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h1>Direção</h1>
+    <div class="containerflex" style="flex-direction: row-reverse;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <div class="containerinline" style="flex-direction: column-reverse;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h1>Quebra de Linhas e Colunas</h1>
+    <div class="containerflex" style="width: 200px;flex-wrap: wrap;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <div class="containerinline" style="width: 200px; flex-wrap: wrap-reverse;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h1>Flex-Flow</h1>
+    <div class="containerflex" style="width: 200px; flex-flow: row nowrap;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <div class="containerinline" style="width: 200px; flex-flow: column wrap-reverse;">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+
+    <h1>Alinhando Elementos</h1>
+    <ul>
+        <li>Justify-Content: flex-start, flex-end, center, space-between, space-around, space-evenly</li>
+        <li>Align-Items: flex-start, flex-end, center, baseline, stretch</li>
+        <li>Align-Content: flex-start, flex-end, center, stretch, space-between, space-around</li>
+        <li>Align-Self: Manipula apenas o elemento especificado.</li>
+    </ul>
+
+    <h1>Espaçamento</h1>
+    <li>Gap, Column-Gap, Row-Gap</li>
+
+    <h1>Ordenando os Itens</h1>
+    <li>Order (valores positivos e negativos)</li>
+
+    <h1>Flex-Grow</h1>
+    <div style="background-color: purple; margin-bottom: 20px; padding: 10px; display: flex; align-items: flex-start; gap: 10px;">
+        <div style="background-color: yellow; flex-grow: 1;">Item 01</div>
+        <div style="background-color: yellow; flex-grow: 3;">Item 02</div>
+        <div style="background-color: yellow; flex-grow: 2;">Item 03</div>
+    </div>
+    <div style="background-color: purple; margin-bottom: 20px; padding: 10px; display: flex; align-items: flex-start; gap: 10px;">
+        <div style="background-color: yellow; flex-grow: 1;">DIO</div>
+        <div style="background-color: yellow; flex-grow: 1;">Bem-Vindo</div>
+        <div style="background-color: yellow; flex-grow: 1;">Trilha de CSS</div>
+    </div>
+
+    <h1>Flex-Shrink</h1>
+    <div style="background-color: purple; margin-bottom: 20px; padding: 10px; display: flex; align-items: flex-start; gap: 10px;">
+        <div style="background-color: yellow; flex-shrink: 1;">Item 01</div>
+        <div style="background-color: yellow; flex-shrink: 3;">Item 02</div>
+        <div style="background-color: yellow; flex-shrink: 2;">Item 03</div>
+    </div>
+    <div style="background-color: purple; margin-bottom: 20px; padding: 10px; display: flex; align-items: flex-start; gap: 10px;">
+        <div style="background-color: yellow; flex-shrink: 1;">DIO</div>
+        <div style="background-color: yellow; flex-shrink: 1;">Bem-Vindo</div>
+        <div style="background-color: yellow; flex-shrink: 1;">Trilha de CSS</div>
+    </div>
+
+    <h1>Flex-Basis</h1>
+    <div style="background-color: purple; margin-bottom: 20px; padding: 10px; display: flex; align-items: flex-start; gap: 10px;">
+        <div style="background-color: yellow; flex-grow: 1; flex-basis: 50px;">Item 01</div>
+        <div style="background-color: yellow; flex-shrink: 3; flex-basis: 50px;">Item 02</div>
+        <div style="background-color: yellow; flex-grow: 2; flex-basis: 50px;">Item 03</div>
+    </div>
+
+    <h1>Shorthand Flex</h1>
+    <p>Manipula os elementos de forma mais inteligente, além de ser mais simples de implementar.</p>
+</body>
+</html>

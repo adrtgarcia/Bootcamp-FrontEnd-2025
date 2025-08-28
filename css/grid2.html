@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: grid;
+            /*display: inline-grid;*/
+        }
+
+        .item {
+            background-color: palegreen;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introdução ao Grid</h1>
+    <div class="container">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+    </div>
+    <div class="container">
+        <div class="item">Item 01</div>
+        <div class="item">Item 02</div>
+        <div class="item">Item 03</div>
+    </div>
+
+    <h1>Linhas e Colunas</h1>
+    <ul>
+        <li>É possível usar a unidade FR para determinar o tamanho das colunas e linhas.</li>
+        <li>Propriedades importantes: repeat, auto-fill, auto-fit, grid-auto, grid-auto-flow.</li>
+        <li>A função minmax() define tamanhos mínimo e máximo do item.</li>
+    </ul>
+    <br>
+    <div class="container" style="grid-template-columns: 200px 100px 200px;">
+        <div class="item" style="background-color: pink;">Item 01</div>
+        <div class="item" style="background-color: lightblue;">Item 02</div>
+        <div class="item" style="background-color: plum">Item 03</div>
+        <div class="item" style="background-color: pink;">Item 04</div>
+        <div class="item" style="background-color: lightblue;">Item 05</div>
+        <div class="item" style="background-color: plum">Item 06</div>
+    </div>
+    <div class="container" style="grid-template-columns: 200px 100px 200px; grid-template-rows: 100px 50px;">
+        <div class="item" style="background-color: pink;">Item 01</div>
+        <div class="item" style="background-color: lightblue;">Item 02</div>
+        <div class="item" style="background-color: plum">Item 03</div>
+        <div class="item" style="background-color: pink;">Item 04</div>
+        <div class="item" style="background-color: lightblue;">Item 05</div>
+        <div class="item" style="background-color: plum">Item 06</div>
+    </div>
+
+    <h1>Posicionamento Específico</h1>
+    <div style="border: 2px solid black; display: grid;  grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr); grid-template-rows: 50px 100px 200px;">
+        <div style="background-color: orange; text-align: center; grid-column-start: 2; grid-column-end: 5; grid-row-start: 1; grid-row-end: 3;">Item 01</div>
+        <div style="background-color: deepskyblue; opacity: .8; text-align: center; grid-column-start: 1; grid-column-end: span 3; grid-row-start: 2; grid-row-end: span 2;">Item 02</div>
+        <div style="background-color: palevioletred; opacity: .6; text-align: center; grid-column: 3 / span 4; grid-row: 2 / span 2;">Item 03</div>
+    </div>
+    
+    <h1>Áreas do Grid</h1>
+    <ul>
+        <li>É possível usar o shorthand GRID para definir as posições das linhas e colunas.</li>
+        <li>É possível usar o shorthand GRID-TEMPLATE para definir as propriedades vistas anteriormente de uma só vez.</li>
+        <li>É possível nomear as áreas do grid e posicionar os itens dentro de áreas específicas: 
+            <br><code>grid-template-areas: "main main . sidebar"</code></li>
+    </ul>
+
+    <h1>Espaçamento Entre as Faixas do Grid</h1>
+    <ul>
+        <li>COLUMN-GAP: distância entre colunas</li>
+        <li>ROW-GAP: distância entre linhas</li>
+        <li>GAP: shorthand (<code>gap: row column</code>)</li>
+    </ul>
+</body>
+</html>

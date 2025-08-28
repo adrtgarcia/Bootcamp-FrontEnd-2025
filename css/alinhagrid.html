@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento</title>
+    <style>
+        .container {
+            display: grid;
+            border: 3px solid black;
+            height: 80vh;
+            grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JUSTIFY-ITEMS x ALIGN-ITEMS</h1>
+    <h2>Stretch</h2>
+    <div class="container" style="justify-items: stretch;">
+        <div style="background-color: palegoldenrod;">Item 01</div>
+        <div style="background-color: paleturquoise;">Item 02</div>
+        <div style="background-color: palegreen;">Item 03</div>
+        <div style="background-color: palevioletred;">Item 04</div>
+        <div style="background-color: lightblue;">Item 05</div>
+        <div style="background-color: lightcoral;">Item 06</div>
+        <div style="background-color: lightgreen;">Item 07</div>
+        <div style="background-color: lightslategrey;">Item 08</div>
+        <div style="background-color: lightskyblue;">Item 09</div>
+    </div>
+    <br><br><br>
+    <h2>Start</h2>
+    <div class="container" style="justify-items: start;">
+        <div style="background-color: palegoldenrod;">Item 01</div>
+        <div style="background-color: paleturquoise;">Item 02</div>
+        <div style="background-color: palegreen;">Item 03</div>
+        <div style="background-color: palevioletred;">Item 04</div>
+        <div style="background-color: lightblue;">Item 05</div>
+        <div style="background-color: lightcoral;">Item 06</div>
+        <div style="background-color: lightgreen;">Item 07</div>
+        <div style="background-color: lightslategrey;">Item 08</div>
+        <div style="background-color: lightskyblue;">Item 09</div>
+    </div>
+    <br><br><br>
+    <h2>End</h2>
+    <div class="container" style="justify-items: end;">
+        <div style="background-color: palegoldenrod;">Item 01</div>
+        <div style="background-color: paleturquoise;">Item 02</div>
+        <div style="background-color: palegreen;">Item 03</div>
+        <div style="background-color: palevioletred;">Item 04</div>
+        <div style="background-color: lightblue;">Item 05</div>
+        <div style="background-color: lightcoral;">Item 06</div>
+        <div style="background-color: lightgreen;">Item 07</div>
+        <div style="background-color: lightslategrey;">Item 08</div>
+        <div style="background-color: lightskyblue;">Item 09</div>
+    </div>
+    <br><br><br>
+    <h2>Center</h2>
+    <div class="container" style="justify-items: center;">
+        <div style="background-color: palegoldenrod;">Item 01</div>
+        <div style="background-color: paleturquoise;">Item 02</div>
+        <div style="background-color: palegreen;">Item 03</div>
+        <div style="background-color: palevioletred;">Item 04</div>
+        <div style="background-color: lightblue;">Item 05</div>
+        <div style="background-color: lightcoral;">Item 06</div>
+        <div style="background-color: lightgreen;">Item 07</div>
+        <div style="background-color: lightslategrey;">Item 08</div>
+        <div style="background-color: lightskyblue;">Item 09</div>
+    </div>
+    <br><br><br>
+    <h2>Align-Items</h2>
+    <li>Utiliza os mesmos tipos (stretch, start, end, center)</li>
+    <div class="container" style="justify-items: stretch; align-items: center;">
+        <div style="background-color: palegoldenrod;">Item 01</div>
+        <div style="background-color: paleturquoise;">Item 02</div>
+        <div style="background-color: palegreen;">Item 03</div>
+        <div style="background-color: palevioletred;">Item 04</div>
+        <div style="background-color: lightblue;">Item 05</div>
+        <div style="background-color: lightcoral;">Item 06</div>
+        <div style="background-color: lightgreen;">Item 07</div>
+        <div style="background-color: lightslategrey;">Item 08</div>
+        <div style="background-color: lightskyblue;">Item 09</div>
+    </div>
+    <br><br><br>
+    <h1>PLACE-ITEMS</h1>
+    <li>Utiliza os mesmos tipos (stretch, start, end, center)</li>
+    <div class="container" style="place-items: center;">
+        <div style="background-color: palegoldenrod;">Item 01</div>
+        <div style="background-color: paleturquoise;">Item 02</div>
+        <div style="background-color: palegreen;">Item 03</div>
+        <div style="background-color: palevioletred;">Item 04</div>
+        <div style="background-color: lightblue;">Item 05</div>
+        <div style="background-color: lightcoral;">Item 06</div>
+        <div style="background-color: lightgreen;">Item 07</div>
+        <div style="background-color: lightslategrey;">Item 08</div>
+        <div style="background-color: lightskyblue;">Item 09</div>
+    </div>
+    <br><br><br>
+    <h1>JUSTIFY-CONTENT x ALIGN-CONTENT</h1>
+    <li>Utilizam os tipos: stretch, start, end, center, space-around, space-between, space-evenly</li>
+    <div class="container" style="place-items: center; justify-content: start;">
+        <div style="background-color: palegoldenrod;">Item 01</div>
+        <div style="background-color: paleturquoise;">Item 02</div>
+        <div style="background-color: palegreen;">Item 03</div>
+        <div style="background-color: palevioletred;">Item 04</div>
+        <div style="background-color: lightblue;">Item 05</div>
+        <div style="background-color: lightcoral;">Item 06</div>
+        <div style="background-color: lightgreen;">Item 07</div>
+        <div style="background-color: lightslategrey;">Item 08</div>
+        <div style="background-color: lightskyblue;">Item 09</div>
+    </div>
+    <br><br><br>
+    <h1>PLACE-CONTENT</h1>
+    <ul>
+        <li>Unifica JUSTIFY-CONTENT e ALIGN-CONTENT em uma única propriedade</li>
+        <li>Exemplo: <code>place-content: space-between space-evenly</code></li>
+    </ul>
+    <br><br><br>
+    <h1>JUSTIFY-SELF x ALIGN-SELF x PLACE-SELF</h1>
+    <ul>
+        <li>Alinha um elemento em específico na página</li>
+        <li>Opções: start, end, center, stretch</li>
+    </ul>
+</body>
+</html>
